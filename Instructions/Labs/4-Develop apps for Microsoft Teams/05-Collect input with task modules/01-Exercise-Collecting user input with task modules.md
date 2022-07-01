@@ -419,7 +419,7 @@ export const VideoSelectorTaskModule = () => {
 
   useEffect(() => {
     if (context) {
-      setEntityId(context.entityId);
+      setEntityId(context.page.id);
       setYouTubeVideoId(getQueryVariable("vid"));
     }
   }, [context]);
